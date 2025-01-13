@@ -1,0 +1,2 @@
+1- ejecutar:
+termux-setup-storage && pkg update -y && pkg upgrade -y && pkg install libexpat openssl python wget ffmpeg -y && pip install -U "yt-dlp[default]" && pip install flask && wget https://rockochitlan.com/asset/app.py && chmos +x ~/start.sh && echo "~/start.sh" >> ~/.bashrc

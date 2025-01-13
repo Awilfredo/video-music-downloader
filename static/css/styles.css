@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+}
+header h1 {
+    font-size: 32px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width:100%;
+}
+input[type="text"] {
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+button {
+    padding: 14px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+#result {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    max-height: 300px;
+    overflow-y: auto;
+}
+#restart {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-top: 20px; /* Separar del contenido superior */
+}
+#pasteButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width:150px;
+}

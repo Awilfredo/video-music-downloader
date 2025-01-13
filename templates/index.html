@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar música</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Descargador de Música</h1>
+        <p>Pega la URL de tu canción de YouTube o YouTube Music.</p>
+    </header>
+    <div class="container" id="controls">
+        <div style="display:flex; width:100%">            
+            <input type="text" id="command" placeholder="Ingresa una url">
+            <button id="pasteButton" onclick="pasteFromClipboard()" style="margin-left:10px">Pegar</button>
+        </div>
+        <div style="display:flex;">
+            <label for="playlistCheckbox">Descargar playlist</label>
+            <input type="checkbox" id="playlistCheckbox">
+        </div> 
+        <div style="display:flex;">
+            <label for="playlistCheckbox">Descargar Video</label>
+            <input type="checkbox" id="videoCheckbox">
+        </div> 
+        <button id="run" style="margin-top:20px;">Ejecutar</button>
+    </div>
+    <div class="container" id="notification" style="display: none; width:100%">
+        <h3 style="text-align: center; width: 100%" id="noti"></h3>
+    </div>
+    <div id="result"></div>
+    <div id="restart" style="display:none;">
+        <button id="restart">Nueva descarga</button>
+    </div>
+    <script src="../static/js/script.js"></script>    
+</body>
+</html>
