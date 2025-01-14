@@ -4,4 +4,4 @@ pkill -f python
 echo "Actualizando yt-dlp..."
 pip install -U yt-dlp
 # Ejecutar tu script Python
-python ~/app.py
+python ~/video-music-downloader/app.py
