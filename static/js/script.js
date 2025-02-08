@@ -24,7 +24,7 @@ document.getElementById("run").addEventListener("click", function runCommand() {
 
   const resultDiv = document.getElementById("result");
   resultDiv.innerHTML = ""; // Limpiar resultados previos
-  let ytCommand = isVideoChecked ? `yt-dlp -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --merge-output-format mp4 -o "~/storage/downloads/videos/%(title)s.%(ext)s" ${url}` : `yt-dlp --progress -x --rm --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata --ignore-errors -o "~/storage/downloads/music/%(title)s.%(ext)s" "${url}"`;
+  let ytCommand = isVideoChecked ? `yt-dlp -f "bestvideo[height<=720]+bestaudio/best[height<=720]" --merge-output-format mp4 -o "~/storage/downloads/videos/%(title)s.%(ext)s" ${url}` : `yt-dlp --progress -x --rm --audio-format mp3 --audio-quality 0 --embed-thumbnail --add-metadata --ignore-errors -o "~/storage/downloads/music/%(playlist_index)s-%(title)s.%(ext)s" "${url}"`;
   ytCommand += isPlaylistChecked ? " --yes-playlist" : " --no-playlist";
 
   const eventSource = new EventSource(
